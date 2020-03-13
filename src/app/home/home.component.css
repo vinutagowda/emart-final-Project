@@ -2,9 +2,10 @@
 .fling-minislide img{ position:absolute; animation:fling-minislide 10s infinite; opacity:0; width: 100%; height: auto;}
 
 @keyframes fling-minislide {35%{opacity:1;} 40%{opacity:0;}}
-.fling-minislide img:nth-child(6){animation-delay:0s;}
-.fling-minislide img:nth-child(5){animation-delay:1s;}
-.fling-minislide img:nth-child(4){animation-delay:1.5s;}
-.fling-minislide img:nth-child(3){animation-delay:2s;}
-.fling-minislide img:nth-child(2){animation-delay:2.5s;}
-.fling-minislide img:nth-child(1){animation-delay:3s;}
+.fling-minislide img:nth-child(7){animation-delay: 0s;}
+.fling-minislide img:nth-child(6){animation-delay:1s;}
+.fling-minislide img:nth-child(5){animation-delay:1.6s;}
+.fling-minislide img:nth-child(4){animation-delay:2s;}
+.fling-minislide img:nth-child(3){animation-delay:2.5s;}
+.fling-minislide img:nth-child(2){animation-delay:3s;}
+.fling-minislide img:nth-child(1){animation-delay:3.ss;}

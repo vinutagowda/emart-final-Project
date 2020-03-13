@@ -1,5 +1,5 @@
 <div class="loginimg">
-<form   (ngSubmit)="save()">
+<form   (ngSubmit)="save()" ngNativeValidate>
   
     <div class="imglogin">
       <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
@@ -7,10 +7,10 @@
     
     <div class="login ">
       <label ><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname"   [(ngModel)]="user.username" />
+      <input type="text" placeholder="Enter Username" name="uname"   [(ngModel)]="user.username"  required/>
     
       <label ><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw"    [(ngModel)]="user.password" />
+      <input type="password" placeholder="Enter Password" name="psw"    [(ngModel)]="user.password" required/>
       <label>
 
       <input type="checkbox" checked="checked" name="remember"> Remember me

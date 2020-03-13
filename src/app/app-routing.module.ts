@@ -37,6 +37,7 @@ import { Product1Component } from './product1/product1.component';
 import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
 import { FooterComponent } from './footer/footer.component';
 import { OrderComponent } from './order/order.component';
+import { MyOrdersComponent } from './my-orders/my-orders.component';
 
 
 
@@ -75,7 +76,8 @@ const routes: Routes = [
     {path:'prdt',component:Product1Component},
     {path:'for',component:ForgetpasswordComponent},
     {path:'footer',component:FooterComponent},
-    {path:'order',component:OrderComponent}
+    {path:'order',component:OrderComponent},
+    {path:'myorder',component:MyOrdersComponent}
     
     
     

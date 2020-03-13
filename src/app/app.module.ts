@@ -42,6 +42,7 @@ import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.compone
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { OrderComponent } from './order/order.component';
+import { MyOrdersComponent } from './my-orders/my-orders.component';
 
 
 @NgModule({
@@ -84,7 +85,8 @@ import { OrderComponent } from './order/order.component';
     ForgetpasswordComponent,
     FooterComponent,
     HeaderComponent,
-    OrderComponent
+    OrderComponent,
+    MyOrdersComponent
  
 
   ],

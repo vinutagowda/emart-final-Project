@@ -1,47 +1,27 @@
+
+<form class="form-horizontal" (ngSubmit)="save()">
 <fieldset>
     <!-- Text input-->
     <div class="form-group">
-      <label class="col-md-4 control-label" for="category">Category Id</label>  
+      <label class="col-md-4 control-label" for="category">Category Name</label>  
       <div class="col-md-4">
-        <select id="category Id">
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-          <option value="">5</option>
-          <option value="">6</option>
-          <option value="">7</option>
-          <option value="">8</option>
-          <option value="">9</option>
-          <option value="">19</option>
-        </select>
+        <input name="Sub-Category Name" type="text" placeholder="Enter category Name" class="form-control input-md" required="">
        </div>
     </div>
     <br/><br/>
-   <div class="form-group">
+   <!-- <div class="form-group">
       <label class="col-md-4 control-label" for="dis_count">Discount</label>  
       <div class="col-md-2">
       <input id="dcount" name="dcount" type="text" placeholder="discount" class="form-control input-sm">
     </div>
     </div>
-    <br/><br/>
+    <br/><br/> -->
 
     <!-- Text input-->
     <div class="form-group">
-      <label class="col-md-4 control-label" for="sub_category">Sub-Category Id</label>  
+      <label class="col-md-4 control-label" for="sub_category">Sub-Category</label>  
       <div class="col-md-4">
-        <select id="subCategory Id ">
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-          <option value="">5</option>
-          <option value="">6</option>
-          <option value="">7</option>
-          <option value="">8</option>
-          <option value="">9</option>
-          <option value="">10</option>
-        </select>
+        <input name="Sub-Category Name" type="text" placeholder="Enter subcategory Name" class="form-control input-md" required="">
      </div>
     </div>
     <br/><br/>
@@ -49,53 +29,47 @@
     <div class="form-group">
       <label class="col-md-4 control-label" for="items">Items</label>  
       <div class="col-md-4">
-      <input id="items" name="items" type="text" placeholder="item_name" class="form-control input-md">
+      <input name="items" type="text" placeholder="item_name" class="form-control input-md" [(ngModel)]="items.itemName">
         
       </div>
     </div>
     
     <br/><br/>
     <div class="form-group">
-      <label class="col-md-4 control-label" for="filebutton">File Button</label>
+      <label class="col-md-4 control-label" for="filebutton">Upload image</label>
       <div class="col-md-4">
-        <input id="filebutton" name="filebutton" class="input-file" type="file">
+        <input  name="filebutton" class="input-file" type="file" [(ngModel)]="items.image">
       </div>
     </div>
   <br/>
  <div class="form-group">
-        <label class="col-md-4 control-label" for="items">Price</label>  
-        <div class="col-md-1">
-        <input id="price" name="price" type="text" placeholder="price of the item" class="form-control input-md">
+        <label class="col-md-4 control-label" for="items">sellingPrice</label>  
+        <div class="col-md-4">
+        <input  name="price" type="text" placeholder="price of the item" class="form-control input-md" [(ngModel)]="items.sellingPrice">
           </div>
-          <label class="col-md-1 control-label">Quantity</label>
-          <div class="col-md-1">
-            <input id="qty" name="qty" type="text" placeholder="quantity" class="form-control input-md">
+          <br/>
+          <br/>
+          <div class="form-group"></div>
+          <label class="col-md-4 control-label">stock</label>
+          <div class="col-md-4">
+            <input  name="qty" type="text" placeholder="quantity" class="form-control input-md" [(ngModel)]="items.stock">
               </div>
-              <label class="col-md-1 control-label">Discount</label>
-          <div class="col-md-1">
-            <input id="dcount" name="dcount" type="text" placeholder="discount" class="form-control input-md">
-            
-              </div>
+             
+       
          </div>
 <br/><br/>
          <div class="form-group">
             <label class="col-md-4 control-label" for="textarea">Description</label>
             <div class="col-md-4">                     
-              <textarea class="form-control" id="desc" name="desc">default text</textarea>
+              <textarea class="form-control" id="desc" name="desc" [(ngModel)]="items.description"></textarea>
               <br/>
-      <span><button id="add" name="add" class="btn btn-primary"> Add </button>
-        <button id="delete" name="delete" class="btn btn-danger"> Delete </button> 
-        <button id="edit" name="edit" class="btn btn-warning"> Edit </button></span> 
+      <span><button  name="add" class="btn btn-primary"> Add </button>
+    
+        <!-- <button id="edit" name="edit" class="btn btn-warning"> Edit </button> -->
+      </span> 
             </div>
           </div>
     
-          <div class="form-group">
-            <label class="col-md-4 control-label" for="submit">Are you sure you want to Submit</label>
-            <div class="col-md-4">
-                <button id="submit" name="submit" class="btn btn-primary" (click)="save()">Submit</button> 
-              
-
-            </div>
-          </div>
-    
+        
     </fieldset>
+  </form>

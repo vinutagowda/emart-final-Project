@@ -7,6 +7,9 @@ import {ActivatedRoute} from '@angular/router';
   providedIn: 'root'
 })
 export class UserService {
+  getUser() {
+    throw new Error("Method not implemented.");
+  }
   baseUrl:string;
 
 
